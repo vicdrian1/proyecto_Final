@@ -415,7 +415,7 @@ ul.show{
 
     /*Esto ajusta las imágenes al nuevo tamaño de los contenedores.*/
     .perfiles img{
-        height:80%;
+        height:70%;
         width: auto;
         object-fit: cover;
         border-radius: 8px;
