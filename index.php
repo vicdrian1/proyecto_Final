@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Enlazamos nuestro archivo css para poder darle estilo a nuestro documento. -->
     <link rel="stylesheet" href="style.css">
+     <!-- Enlace a nuestro archivo de jquery, donde están las funciones necesarias para el funcionamiento de la aplicación. -->
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -78,12 +80,10 @@
         <!-- Este botón nos permitirá descargar la imagen generada. Contiene un icono de descarga. -->
         <button id="crearImagen"><i class="fa-solid fa-download"></i>Descargar</button>
     </div>
-
+    
     <!-- Enlace a nuestro archivo de "html2canvas" que nos permite convertir un contenedor en una imagen. -->
     <script src="html2canvas.js"></script>
     <!-- Enlace a nuestro archivo de "filesaver", plugin que nos permite descargar de forma automática la imagen al pulsar el botón. -->
     <script src="filesaver.js"></script>
-    <!-- Enlace a nuestro archivo de jquery, donde están las funciones necesarias para el funcionamiento de la aplicación. -->
-    <script src="script.js"></script>
 </body>
 </html>
