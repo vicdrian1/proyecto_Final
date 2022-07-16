@@ -1,0 +1,593 @@
+/*Con estas líneas definimos la fuente utilizada por defecto y utilizamos la propiedad "border-box" para que los tamaños del documento tengan en cuenta el padding.
+.Esto afecta a todo el documento gracias al selector universal. Con "overflow-y: overlay", podemos evitar que la barra de desplazamiento vertical ocupe espacio. */
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    overflow-y: overlay;
+}
+
+/*Eliminamos el margin y el padding al body para evitar que nos aparezcan bordes blancos, y le damos un alto y un ancho mínimo de 100% para que ocupen toda 
+la pantalla. También le damos un color por defecto al fondo de la web.*/
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: black;
+}
+
+/*-MENU-*/
+
+/*Aquí se encuentra el código relativo al menú de navegación de la web. Usamos la propiedad flex para poder organizar los elementos.
+Con "box-shadow" podemos añadir una línea fina debajo del menú, para darle un mejor aspecto visual. */
+#slide_nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 1rem 3px -1rem white;
+}
+
+/*Con esto damos estilo al contenedor que incluye el logo y al título de la web*/
+.menu_logo{
+    display: flex;
+    align-items: center;
+}
+
+/*Aquí le damos estilo al logo de la web, para adaptar su tamaño al texto.*/
+.logo{
+    margin-left: 1.5em;
+    height: 3em;
+    width:auto;
+    object-fit: cover;
+}
+
+/*Estas líneas son referentes al título que aparece junto al logo, que nos llevará a la parte principal de la web. El tamaño de letra estará adaptado según el tamaño de la pantalla. */
+.menu_logo h1{
+    color:white;
+    margin-left: .8rem;
+    font-size: calc(1.125rem + ((1vw - 7.93px) * 0.8873));
+    font-weight: bold;
+}
+
+/*Estas líneas le darán un efecto al texto cuando pasemos el cursor por encima. Con "transition" le damos una pequeña animación de transición.*/
+#slide_nav h1:hover{
+    color: orange;
+    transition: .2s;
+}
+
+
+/*Esta es la lista del menú. Eliminamos los espacios que tienen las listas por defecto.*/
+.menu_items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/*Líneas correspondientes al menú hamburguesa, este lo oculta en las pantallas de pc. Este menú solo será visible en dispositivos móviles.*/
+#burger_menu{
+    display: none;
+}
+
+/*Estas líneas de código hacen referencia a las líneas que apareceran para representar el menú hamburguesa.*/
+.burger-line {
+    border-radius: 15px;
+    height: 4px;
+    width: 2.6em;
+    display: block;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    margin-top: 10px;
+    margin-left: 1rem;
+}
+
+/*Estas clases serán añadidas a las líneas anteriormente mencionadas para que tengan una animación de convertirse en una X para cerrar el menú hamburguesa una vez abierto.*/
+.primera {
+    transform: translateY(9px) rotate(45deg);
+    transition: all 0.4s;
+}
+
+.segunda {
+    opacity: 0;
+    transition: all 0s;
+}
+
+.tercera {
+    transform: translateY(-20px) rotate(-45deg);
+    transition: all 0.4s;
+}
+
+/*Esta clase permite mostrar/ocultar la lista del menú en móvil al hacer clic sobre el icono correspondiente.*/
+ul.show{
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*Aquí se encuentran los elementos de la lista del menú. Con el padding los ordenamos a gusto.*/
+.menu_item{
+    padding: 0 1.5em;
+}
+
+/*Estas líneas hacen referencia a los enlaces que se encuentran dentro de la lista del menú. Convertimos la lista vertical en una lista horizontal sin decoraciones. El tamaño de letra estará adaptado según el tamaño de la pantalla*/
+.menu_items li a{
+    text-decoration: none;
+    color: white;
+    font-size: calc(1rem + ((1vw - 7.93px) * 0.3549));
+    padding: 1em;
+    display: inline-block;
+    position: relative;
+}
+
+/*Estas lineas hacen referencia al efecto de hover de los elementos del menú*/
+.menu_items li a:hover{
+    color: orange;
+    transition: .2s;
+}
+
+/*-MAIN-*/
+
+/*Estas líneas hacen referencia al contenedor principal del cuerpo de la página*/
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+/*Esto modifica el estilo del título de la web. El tamaño de letra estará adaptado según el tamaño de la pantalla*/
+#intro>p:nth-of-type(1){
+    color:white;
+    font-size: calc(1.5rem + ((1vw - 7.93px) * 0.7098));
+    margin-top: 1em;
+    margin-bottom: .2em;
+}
+
+/*Estas líneas hacen referencia al texto que aparece por debajo del título de bienvenida*/
+#intro p{
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+/*Líneas referentes al contenedor de las tarjetas de perfil de personajes. Usamos flex-box y la propiedad "space-around" para distribuir los elementos.*/
+.characters{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*Estas son cada una de las tarjetitas de perfil de los personajes. Con estas líneas hacemos que hayan 5 tarjetitas por fila.*/
+.perfiles{
+    height: 15em;
+    width: 20%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+/*Estas líneas definen el tamaño de las imagenes de las tarjetitas del perfil y además, les da un borde redondeado y un fondo semitransparente.*/
+.perfiles img{
+    height: 13em;
+    width: 13em;
+    object-fit: cover;
+    background-color: rgba(148, 148, 148, 0.2);
+    border-radius: 10px;
+}
+
+/*Líneas correspondientes a los párrafos con el nombre de los personajes asociados a cada tarjetita*/
+.perfiles p{
+    color: white;
+    margin-top: .2em;
+    font-size: calc(0.875rem + ((1vw - 7.93px) * 0.3549));
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+
+/*-CARD-*/
+
+/*Líneas correspondientes al contenedor principal de la tarjeta generada para los materiales del personaje*/
+.card{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: none;
+    align-items: center;
+    width:80%;
+    height:50em;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    border-radius: 10px;
+}
+
+/*Aqui definimos el estilo del contenedor de la imagen del personaje y su nombre. Con "overflow: hidden" evitamos que la imagen sobresalga del contenedor.*/
+.profile{
+    width: 25%;
+    height: 90%;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(17, 17, 17, 0.8);
+}
+
+/*Líneas correspondientes a la imagen del personaje. Con "object-fit: cover" ajustamos la imagen al contenedor.*/
+.profile>img{
+    width:100%;
+    height: 93%;
+    object-fit: cover;
+}
+
+/*Líneas correspondientes al nombre del personaje en su perfil.*/
+.profile>p{
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*Líneas correspondientes al contenedor de los materiales. Dentro se encuentran TODOS los materiales.*/
+.materials{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 70%;
+    height: 90%;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*Líneas correspondientes a los contenedores individuales de cada categoría de objetos.*/
+.level, .talent, .mixed{
+    background-color: rgba(17, 17, 17, 0.8);
+    width: 95%;
+    border-radius: 10px;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*Estas líneas afectan a los títulos de cada categoría de objetos*/
+.level p, .talent p, .mixed p{
+    width: 100%;
+    color: white;
+    margin-top: .5em;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+/*Aquí definimos el estilo de los contenedores de cada objeto.*/
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+}
+
+/*Con estas líneas, modificamos el estilo de las imágenes de cada objeto además de añadirles un efecto de sombra blanca difuminada.*/
+.item>img{
+    width:80%;
+    height: 5em;
+    filter: drop-shadow( 1.5px 1.5px 5px rgba(255, 255, 255, 0.384) );
+    object-fit:contain;
+}
+
+/*Aquí definimos el estilo de las cantidades de cada objeto.*/
+.item p{
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+/*Estas líneas definen el estilo del botón para descargar la imagen*/
+#crearImagen{
+    border-radius: 30px;
+    height: 3em;
+    width: 10em;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    cursor: pointer;
+    display: none; 
+    margin-bottom: 2em;
+}
+
+/*Estas líneas le dan un efecto de hover al botón de descarga.*/
+#crearImagen:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/*Estas líneas son para darle un pequeño espaciado entre el icono de descarga y el texto del botón.*/
+.fa-solid{
+    margin-right: .5em;
+}
+
+/*-RESPONSIVE MÓVILES-*/
+
+@media screen and (min-width: 343px) and (max-width: 793px) {
+
+    /*-MENU-*/
+    
+    /*Le ponemos una posición fija al menú porque queremos hacer una pequeña animación en la que salga desde arriba. Cambiamos la dirección del flex-direction a column para que los elementos del menú salgan en columna y ocupando toda la pantalla.*/
+    .menu_items {
+      position: fixed;
+      top: -110vh;
+      transition: all .2s;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.897);
+      text-align: center;
+      padding-top: 5em;
+      z-index: 10;
+      font-weight: bold;
+    }
+    
+    /*El menú hamburguesa, oculto en la versión de pc, ahora es visible. Con Z-index lo ponemos por delante del resto de la aplicación.*/
+    #burger_menu{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 11;
+        padding-right: 2em;
+    }
+
+    /*Añadimos unos paddings para posicionar mejor los items del menú.*/
+    #slide_nav{
+        padding-top: .5em;
+        padding-bottom: .5em;
+    } 
+    /*El título de la web desaparece para dejar solamente al logo de la app, evitando una saturación del espacio.*/
+    #slide_nav h1{
+        display: none;
+    }
+
+    /*Esto modifica el tamaño de los elementos del menú.*/
+    .menu_items li a{
+        font-size: 1.5em;
+    }
+
+    /*-MAIN-*/
+
+    /*Con estas líneas podemos ordenar el contenido de la intro de la web.*/
+    #intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Esto modifica el espacio del texto del primer párrafo de la intro.*/
+    #intro p:nth-of-type(1){
+        width: 80%;
+    }
+
+    /*Estas líneas modifican el resto de los párrafos de la intro.*/
+    #intro p{
+        width: 80%;
+    }
+
+    /*-CHARACTERS-*/
+
+    /*Eliminamos el margen inferior del contenedor de los perfiles.*/
+    .characters{
+        margin-bottom: 0;
+    }
+
+    /*Modificamos el tamaño de los contenedores de cada tarjeta del perfil para adaptarlos a los dispositivos móviles.*/
+    .perfiles{
+        width: 40%;
+        margin-top: 0;
+        margin-bottom: 1em;
+        height: 12em;
+    }
+
+    /*Esto ajusta las imágenes al nuevo tamaño de los contenedores.*/
+    .perfiles img{
+        height:80%;
+        width: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    /*Esto modifica el tamaño de las tarjetas generadas de cada personaje.*/
+    .card{
+        margin-top: 0;
+        background-size: cover;
+        background-position: center center;
+        height:90em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Estas líneas modifican el aspecto del contenedor de la imagen del personaje en la tarjeta.*/
+    .profile{
+        width: 90%;
+        height: 30%;
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    /*Se modifica el tamaño de la imagen para hacerla más visual.*/
+    .profile>img{
+        object-position: center 25%;
+        height: 90%;
+    }
+
+    /*Modifica los márgenes del párrafo del nombre del personaje.*/
+    .profile>p{
+        margin-top: .25em;
+        margin-bottom: .25em;
+    }
+
+    /*Cambiamos la dirección de flex-box a columnas para adaptarlo a los dispositivos móviles.*/
+    .materials{
+        width: 90%;
+        height: 70%;
+        margin-left: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /*Modificamos ligeramente la disposición de los elementos de los contenedores de cada grupo de objetos.*/
+    .level, .talent, .mixed{
+        width: 100%;
+        padding-bottom: 5%;
+        justify-content: space-evenly;
+    }
+
+    /*Modificamos el tamaño del título de cada grupo de objetos*/
+    .level p, .talent p, .mixed p{
+        font-size: 18px;
+    }
+
+    /*Modificamos el espacio que ocupa cada objeto.*/
+    .item{
+        width: 30%;
+    }
+
+    /*Modificamos el tamaño de la letra ligeramente para adaptarlo a los dispositivos móviles.*/
+    .item p{
+        font-size: 16px;
+    }
+}
+
+/*-RESPONSIVE TABLET-*/
+
+@media only screen and (min-device-width:793px) and (max-device-width: 1200px){
+
+    /*-MENÚ-*/
+
+    /*Ajustamos el tamaño de la primera parte del menú para que ocupe un 50% del espacio.*/
+    .menu_logo{
+        width: 50%;
+    }
+
+    /*Aquí eliminamos el padding existente entre los items del menú.*/
+    .menu_item{
+        padding: 0;
+    }
+
+    /*-MAIN-*/
+
+    /*Organizamos la parte de la introducción a la web con un flex-box y una disposición en columna.*/
+    #intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Restringimos el tamaño de los párrafos a un 90% de su contenedor padre.*/
+    #intro p{
+        width: 90%;
+    }
+
+    /*-CHARACTERS-*/
+
+    /*Eliminamos el margen inferior del contenedor de los perfiles y reducimos el tamaño del superior.*/
+    .characters{
+        margin-bottom: 0;
+        margin-top: 1em;
+    }
+
+    /*Modificamos el tamaño de los contenedores de cada tarjeta del perfil para adaptarlos a los dispositivos móviles.*/
+    .perfiles{
+        width: 30%;
+        margin-top: 0;
+        margin-bottom: 1em;
+        height: 15em;
+    }
+
+    /*Con estas líneas adaptamos el estilo de la tarjeta a un tamaño de dispositivo intermedio.*/
+    .card{
+        margin-top: 0;
+        background-size: cover;
+        background-position: center center;
+        height:90em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Estas líneas modifican el aspecto del contenedor de la imagen del personaje en la tarjeta.*/
+    .profile{
+        width: 90%;
+        height: 30%;
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    /*Se modifica el tamaño de la imagen para hacerla más visual.*/
+    .profile>img{
+        object-position: center 40%;
+        height: 90%;
+    }
+
+    /*Modifica los márgenes del párrafo del nombre del personaje.*/
+    .profile>p{
+        margin-top: .25em;
+        margin-bottom: .25em;
+    }
+
+    /*Cambiamos la dirección de flex-box a columnas para adaptarlo a los dispositivos de tamaño intermedio como tablets, etc.*/
+    .materials{
+        width: 90%;
+        height: 70%;
+        margin-left: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /*Modificamos ligeramente la disposición de los elementos de los contenedores de cada grupo de objetos.*/
+    .level, .talent, .mixed{
+        width: 100%;
+        padding-bottom: 5%;
+        justify-content: space-evenly;
+    }
+
+    /*Modificamos el tamaño del título de cada grupo de objetos*/
+    .level p, .talent p, .mixed p{
+        font-size: 18px;
+    }
+
+    /*Modificamos el espacio que ocupa cada objeto.*/
+    .item{
+        width: 30%;
+    }
+
+    /*Modificamos el tamaño de la letra ligeramente para adaptarlo a los dispositivos de tamaño intermedio como tablets, etc.*/
+    .item p{
+        font-size: 16px;
+    }
+}
