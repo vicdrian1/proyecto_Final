@@ -57,7 +57,7 @@ $( document ).ready(function() {
                      data.forEach(element => {
                         //Ya que cada elemento de cada personaje tiene un color distinto, usamos de fondo una imagen distinta según el asignado en la BBDD.
                         $('.card').css({'background-image':'url('+element.imgElem+')'})
-                        $('#crearImagen').val(element.nombrePJ).toLowerCase()
+                        $('#crearImagen').val(element.nombrePJ)
                         //Aquí modificamos el contenido del contenedor "card" y le añadimos todo el contenido de los personajes a la tarjeta.
                         $(".card").html(
                             '<div class="profile">'+
