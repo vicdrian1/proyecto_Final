@@ -26,7 +26,7 @@ $( document ).ready(function() {
             
         //Aquí llamamos al plugin "filesaver" para poder descargar la imagen y almacenarla en nuestro dispositivo.
         canvas.toBlob(function(blob){
-        saveAs(blob, "ficha"+$(this).val()+".png")
+        saveAs(blob, 'ficha'+$("#crearImagen").val()+'.png')
         })
         });
     })
