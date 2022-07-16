@@ -407,7 +407,7 @@ ul.show{
 
     /*Modificamos el tamaño de los contenedores de cada tarjeta del perfil para adaptarlos a los dispositivos móviles.*/
     .perfiles{
-        width: 40%;
+        width: 50%;
         margin-top: 0;
         margin-bottom: 1em;
         height: 12em;
@@ -415,7 +415,7 @@ ul.show{
 
     /*Esto ajusta las imágenes al nuevo tamaño de los contenedores.*/
     .perfiles img{
-        height:75%;
+        height:70%;
         width: auto;
         object-fit: cover;
         border-radius: 8px;
