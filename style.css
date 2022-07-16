@@ -1,32 +1,3 @@
-
-.hero{
-    background-image: url("img/fondoHero.jpg");
-    background-size: cover;
-    background-position: center center;
-    filter:opacity(.5);
-    height:50em;
-}
-
-/*Aquí se encuentra el código relativo al menú de navegación de la web. Usamos la propiedad flex para poder organizar los elementos.
-Con "box-shadow" podemos añadir una línea fina debajo del menú, para darle un mejor aspecto visual. */
-#slide_nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 1rem 3px -1rem white;
-    position: absolute;
-    top: 0%;
-}
-
-@media screen and (min-width: 343px) and (max-width: 793px) {
-
-    .hero{
-        height: 30em;
-    }
-}
-
-
 /*Con estas líneas definimos la fuente utilizada por defecto y utilizamos la propiedad "border-box" para que los tamaños del documento tengan en cuenta el padding.
 .Esto afecta a todo el documento gracias al selector universal. Con "overflow-y: overlay", podemos evitar que la barra de desplazamiento vertical ocupe espacio. */
 *{
@@ -45,16 +16,31 @@ html, body {
     background-color: black;
 }
 
-/*-MENU-*/
+/*-HEADER-*/
+
+/*Estas líneas hacen referencia a la imagen de fondo que sirve a modo de "Hero Page".
+Con "filter: opacity(.5)"  le damos un aspecto ligeramente oscurecido.*/
+.hero{
+    background-image: url("img/fondoHero.jpg");
+    background-size: cover;
+    background-position: center center;
+    filter:opacity(.5);
+    height:50em;
+}
+
+
 
 /*Aquí se encuentra el código relativo al menú de navegación de la web. Usamos la propiedad flex para poder organizar los elementos.
-Con "box-shadow" podemos añadir una línea fina debajo del menú, para darle un mejor aspecto visual. */
+Con "box-shadow" podemos añadir una línea fina debajo del menú, para darle un mejor aspecto visual. Con "position: absolute" y "top: 0%",
+anclamos el menú a la parte superior de la página. */
 #slide_nav {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 1rem 3px -1rem white;
+    position: absolute;
+    top: 0%;
 }
 
 /*Con esto damos estilo al contenedor que incluye el logo y al título de la web*/
@@ -165,7 +151,7 @@ ul.show{
 /*-MAIN-*/
 
 /*Estas líneas hacen referencia al contenedor principal del cuerpo de la página*/
-.main{
+main{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -362,6 +348,59 @@ ul.show{
     margin-right: .5em;
 }
 
+/*-FOOTER*/
+
+/*Aquí definimos el estilo del footer de la página, es algo sencillo e incluye un menú social con enlaces a las redes sociales.*/
+footer{
+    height: 15em;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Líneas referentes al tamaño de los párrafos del footer*/
+
+footer p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+/*Aquí le damos un peso mayor al primer párrafo del footer.*/
+footer p:nth-of-type(1){
+    font-weight: bold;
+}
+
+/*Reduce el margen superior por defecto del segundo párrafo para que no estén tan separados.*/
+footer p:nth-of-type(2){
+    margin-top: .5em;
+}
+
+/*Líneas referentes al menú social del footer.*/
+.social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/*Líneas referentes a la lista dentro del menú social.*/
+.social li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 1em;
+    display: inline-block;
+    position: relative;
+}
+
 /*-RESPONSIVE MÓVILES-*/
 
 @media screen and (min-width: 343px) and (max-width: 793px) {
@@ -509,6 +548,17 @@ ul.show{
     /*Modificamos el tamaño de la letra ligeramente para adaptarlo a los dispositivos móviles.*/
     .item p{
         font-size: 16px;
+    }
+
+    /*Reducimos el tamaño que ocupa la imagen de fondo de la "Hero Page".*/
+    .hero{
+        height: 30em;
+    }
+
+    /*Elimina el padding existente en la lista de iconos.*/
+    .social li a{
+        padding-bottom: 0;
+        padding-left: 0;
     }
 }
 

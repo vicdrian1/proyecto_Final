@@ -26,33 +26,36 @@
 </head>
 
 <body>
-    <!-- Aquí se encuentra nuestro menú de navegación, formado por un logo y un título por un lado y las secciones por otro. -->
-    <div class="hero">
-    </div>
-    <nav id="slide_nav">
-        <div class="menu_logo">
-            <img class="logo" src="img/logo.png" alt="">
-            <h1>Genshin Ascension Cards</h1>
+    <!-- Aquí se encuentra el header de la página. -->
+    <header>
+        <!-- Aquí se encuentra nuestro menú de navegación, formado por un logo y un título por un lado y las secciones por otro. -->
+        <div class="hero">
         </div>
+        <nav id="slide_nav">
+            <div class="menu_logo">
+                <img class="logo" src="img/logo.png" alt="">
+                <h1>Genshin Ascension Cards</h1>
+            </div>
 
-        <!-- Este es el menú hamburguesa que aparecerá solo cuando la pantalla tenga cierta resolución. -->
-        <div id="burger_menu">
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-        </div>
+            <!-- Este es el menú hamburguesa que aparecerá solo cuando la pantalla tenga cierta resolución. -->
+            <div id="burger_menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
 
-        <!-- Lista de los elementos de navegación de la web, con un menú social. -->
-        <ul class="menu_items">
-            <li class="menu_item"><a href="#">Sobre Nosotros</a></li>
-            <li class="menu_item"><a href="#">Colabora</a></li>
-            <li class="menu_item"><a href="#"><i class="fa-brands fa-twitter" style="padding-top: .3em;"></i></a></li>
-            <li class="menu_item"><a href="#"><i class="fa-brands fa-instagram" style="padding-top: .3em;"></i></a></li>
-        </ul>
-    </nav>
+            <!-- Lista de los elementos de navegación de la web, con un menú social. -->
+            <ul class="menu_items">
+                <li class="menu_item"><a href="#">Sobre Nosotros</a></li>
+                <li class="menu_item"><a href="#">Colabora</a></li>
+                <li class="menu_item"><a href="#"><i class="fa-brands fa-twitter" style="padding-top: .3em;"></i></a></li>
+                <li class="menu_item"><a href="#"><i class="fa-brands fa-instagram" style="padding-top: .3em;"></i></a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Aquí se encuentra el contenido principal de la página web. -->
-    <div class="main">
+    <main>
         <div id="intro">
             <p>Bienvenido/a a <b>"Genshin Ascension Cards"</b></p>
             <p>Aquí encontrarás información sobre los materiales necesarios para ascender a tus personajes de </p>
@@ -80,8 +83,17 @@
         <div class="card"></div>
         <!-- Este botón nos permitirá descargar la imagen generada. Contiene un icono de descarga. -->
         <button id="crearImagen"><i class="fa-solid fa-download"></i>Descargar</button>
-    </div>
+    </main>
     
+    <footer>
+        <p>Genshin Ascension Cards</p>
+        <p>Todos los derechos reservados</p>
+        <ul class="social">
+            <li class="menu_item"><a href="#"><i class="fa-brands fa-twitter" style="padding-top: .3em;"></i></a></li>
+            <li class="menu_item"><a href="#"><i class="fa-brands fa-youtube" style="padding-top: .3em;"></i></a></li>
+            <li class="menu_item"><a href="#"><i class="fa-brands fa-instagram" style="padding-top: .3em;"></i></a></li>
+        </ul>
+    </footer>
     <!-- Enlace a nuestro archivo de "html2canvas" que nos permite convertir un contenedor en una imagen. -->
     <script src="html2canvas.js"></script>
     <!-- Enlace a nuestro archivo de "filesaver", plugin que nos permite descargar de forma automática la imagen al pulsar el botón. -->
