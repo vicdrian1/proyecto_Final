@@ -43,7 +43,7 @@ $( document ).ready(function() {
             //Utilizamos ajax para evitar que todo el proceso requiera de recargar la página.
             $.ajax({
                 /*Utilizamos los datos del "selectPersonajes"*/ 
-                method : 'GET',
+                method : 'POST',
                 dataType: 'json',
                 url : 'pages/selectPersonajes.php',
                 data : {
