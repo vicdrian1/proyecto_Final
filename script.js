@@ -35,6 +35,7 @@ $( document ).ready(function() {
 
     //Seleccionamos el contenedor con la case "item" y al hacer clic, ejecutará una función.
     $(".perfiles").on('click', function(e){   
+        e.preventDefault();
         //Aquí creamos la variable "cartaPersonaje y le asignamos el valor del contenedor seleccionado (los valores corresponden a las ids de los personajes de la BBDD)."
         var cartaPersonaje = $(this).data('value');
         //Aquí hacemos que el contenedor de la tarjeta tenga una animación en la que la opacidad pasa a 0.
