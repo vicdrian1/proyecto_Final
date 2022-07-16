@@ -3,6 +3,9 @@
 if(isset($_POST["cartaPersonaje"])){
 
     try{
+        include "../db/pdoconfig.php";
+        $connection = new PDO("mysql: host=".$host."; port=3307; dbname=".$dbname, $username, $password, $options);
+        
         $id_personaje = $_POST["cartaPersonaje"];
  
         $personajes = $connection->query("SELECT personaje.id, personaje.nombre AS nombrePJ, personaje.imgElem, personaje.imgSplash, personaje.imgPerfil, i1.imagen AS item1, i1.cantidad AS i1Cant, 
