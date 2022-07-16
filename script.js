@@ -45,7 +45,7 @@ $( document ).ready(function() {
                 /*Utilizamos los datos del "selectPersonajes"*/ 
                 method : 'POST',
                 dataType: 'json',
-                url : 'pages/selectPersonajes.php',
+                url : '../pages/selectPersonajes.php',
                 data : {
                     'cartaPersonaje' : cartaPersonaje
                 },
