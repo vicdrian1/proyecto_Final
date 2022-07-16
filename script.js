@@ -24,9 +24,9 @@ $( document ).ready(function() {
         //Aquí llamamos al html2canvas para convertir el contenedor con la clase "card" para que haga una "captura" del mismo.
         html2canvas($(".card")[0]).then((canvas) => {
             
-            //Aquí llamamos al plugin "filesaver" para poder descargar la imagen y almacenarla en nuestro dispositivo.
-            canvas.toBlob(function(blob){
-                saveAs(blob, "fichaPersonaje.png")
+        //Aquí llamamos al plugin "filesaver" para poder descargar la imagen y almacenarla en nuestro dispositivo.
+        canvas.toBlob(function(blob){
+        saveAs(blob, "fichaPersonaje.png")
         })
         });
     })
@@ -57,6 +57,7 @@ $( document ).ready(function() {
                      data.forEach(element => {
                         //Ya que cada elemento de cada personaje tiene un color distinto, usamos de fondo una imagen distinta según el asignado en la BBDD.
                         $('.card').css({'background-image':'url('+element.imgElem+')'})
+                        $('#crearImagen').val(element.nombrePJ)
                         //Aquí modificamos el contenido del contenedor "card" y le añadimos todo el contenido de los personajes a la tarjeta.
                         $(".card").html(
                             '<div class="profile">'+
