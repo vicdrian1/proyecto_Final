@@ -150,6 +150,9 @@ $( document ).ready(function() {
                             scrollTop: $(".card").offset().top
                         }, 1000);
                     })
+                },
+                error: function(response) {
+                console.log(response);
                 }
             }); 
 
