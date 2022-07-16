@@ -45,13 +45,13 @@ $( document ).ready(function() {
                 /*Utilizamos los datos del "selectPersonajes"*/ 
                 url : 'pages/selectPersonajes.php',
                 method : 'POST',
+                dataType: "json",
                 data : {
                     'cartaPersonaje' : cartaPersonaje
                 },
 
                 //Si lo anterior tiene éxito, traducirá los datos para convertirlos en un objeto que se pueda usar con jquery.
                 success:function(data){
-                     data = JSON.parse(data);
                      //A los datos, les aplicamos un bucle forEach para generar una tarjeta para cada personaje seleccionado.
                      data.forEach(element => {
                         //Ya que cada elemento de cada personaje tiene un color distinto, usamos de fondo una imagen distinta según el asignado en la BBDD.
