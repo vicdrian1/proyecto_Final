@@ -4,7 +4,6 @@ if(isset($_POST["cartaPersonaje"])){
 
     try{
         include "../db/pdoconfig.php";
-        $connection = new PDO("mysql: host=".$host."; dbname=".$dbname, $username, $password, $options);
         
         $id_personaje = $_POST["cartaPersonaje"];
  
