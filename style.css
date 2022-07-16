@@ -409,13 +409,12 @@ ul.show{
     .perfiles{
         width: 50%;
         margin-top: 0;
-        margin-bottom: 1em;
-        height: 12em;
+        height: 10em;
     }
 
     /*Esto ajusta las imágenes al nuevo tamaño de los contenedores.*/
     .perfiles img{
-        height:70%;
+        height:80%;
         width: auto;
         object-fit: cover;
         border-radius: 8px;
