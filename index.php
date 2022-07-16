@@ -27,6 +27,8 @@
 
 <body>
     <!-- Aquí se encuentra nuestro menú de navegación, formado por un logo y un título por un lado y las secciones por otro. -->
+    <div class="hero">
+    </div>
     <nav id="slide_nav">
         <div class="menu_logo">
             <img class="logo" src="img/logo.png" alt="">

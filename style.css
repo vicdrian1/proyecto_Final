@@ -1,3 +1,32 @@
+
+.hero{
+    background-image: url("img/fondoHero.jpg");
+    background-size: cover;
+    background-position: center center;
+    filter:opacity(.5);
+    height:50em;
+}
+
+/*Aquí se encuentra el código relativo al menú de navegación de la web. Usamos la propiedad flex para poder organizar los elementos.
+Con "box-shadow" podemos añadir una línea fina debajo del menú, para darle un mejor aspecto visual. */
+#slide_nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 1rem 3px -1rem white;
+    position: absolute;
+    top: 0%;
+}
+
+@media screen and (min-width: 343px) and (max-width: 793px) {
+
+    .hero{
+        height: 30em;
+    }
+}
+
+
 /*Con estas líneas definimos la fuente utilizada por defecto y utilizamos la propiedad "border-box" para que los tamaños del documento tengan en cuenta el padding.
 .Esto afecta a todo el documento gracias al selector universal. Con "overflow-y: overlay", podemos evitar que la barra de desplazamiento vertical ocupe espacio. */
 *{
