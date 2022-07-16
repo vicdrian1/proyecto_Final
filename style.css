@@ -180,6 +180,7 @@ ul.show{
     align-items: center;
     margin-top: 1em;
     margin-bottom: .5em;
+    cursor: pointer;
 }
 
 /*Estas líneas definen el tamaño de las imagenes de las tarjetitas del perfil y además, les da un borde redondeado y un fondo semitransparente.*/
