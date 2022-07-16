@@ -13,7 +13,8 @@
 
     <title>Genshin Ascension Cards</title>
     <!-- Enlazamos el cdn de jquery para poder acceder a la librería de plugins. -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+
     <!-- Enlazamos la fuente de google "Open Sans" para poder usarla en nuestra documento. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
