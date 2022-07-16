@@ -33,7 +33,7 @@
         </div>
         <nav id="slide_nav">
             <div class="menu_logo">
-                <img class="logo" src="img/logo.png" alt="">
+                <img class="logo" src="img/logo.png" alt="logo">
                 <h1>Genshin Ascension Cards</h1>
             </div>
 
@@ -84,6 +84,7 @@
     </main>
     
     <footer>
+        <img class="logo" src="img/logo.png" alt="logo">
         <p>Genshin Ascension Cards</p>
         <p>Todos los derechos reservados</p>
         <ul class="social">
