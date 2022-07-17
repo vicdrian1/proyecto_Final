@@ -7,13 +7,14 @@
 }
 
 /*Eliminamos el margin y el padding al body para evitar que nos aparezcan bordes blancos, y le damos un alto y un ancho mínimo de 100% para que ocupen toda 
-la pantalla. También le damos un color por defecto al fondo de la web.*/
+la pantalla. También le damos un color por defecto al fondo de la web. Con "scroll-behavior: smooth" podemos suavizar el efecto de desplazamiento a través de la web.*/
 html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
     min-width: 100%;
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 /*-HEADER-*/
@@ -349,6 +350,44 @@ main{
     margin-right: .5em;
 }
 
+/*-SOBRE NOSOTROS-*/
+
+/*Líneas sobre el contenedor de la sección "Sobre Nosotros" donde explicamos un poco quiénes somos y nuestro objetivo.*/
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*Aquí se define el estilo del título de la sección*/
+#about h1{
+    font-size: calc(1.5rem + ((1vw - 7.93px) * 0.7098));
+    color: white;
+    margin-bottom: 0;
+}
+
+/*Aquí estilizamos el texto de la sección y ajustamos el tamaño.*/
+#about p{
+    color: white;
+    font-size: 18px;
+    width: 70%;
+    margin-top: .5em;
+}
+
+/*Aquí se define el estilo de la imagen (captura del juego) donde se ve a un jugador consiguiente un objeto.*/
+#about img{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*Aquí definimos el estilo de los enlaces, para que aún siendo visitados, se vean del color deseado.*/
+a, a:visited{
+    color: orange;
+}
+
 /*-FOOTER*/
 
 /*Aquí definimos el estilo del footer de la página, es algo sencillo e incluye un menú social con enlaces a las redes sociales.*/
@@ -567,6 +606,18 @@ footer p:nth-of-type(2){
     .social li a{
         padding-bottom: 0;
         padding-left: 0;
+    }
+
+    /*-SOBRE NOSOTROS*/
+
+    #about p{
+        width: 90%;
+    }
+
+    #about img{
+        width: 90%;
+        height: 25em;
+        object-fit: cover;
     }
 }
 

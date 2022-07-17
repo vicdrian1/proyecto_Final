@@ -20,12 +20,15 @@ $( document ).ready(function() {
 
     //Esta función nos permite seleccionar el contenedor con el id "crearImagen" y al hacer click ejecutará una función para convertir un contenedor en una imagen.
     $("#crearImagen").click(function(){
+        
+        /*En esta línea, asignamos el valor que tiene el botón a una variable, para poder usarla más adelante.*/
         var nombreTarjeta = $("#crearImagen").val()
         //Aquí llamamos al html2canvas para convertir el contenedor con la clase "card" para que haga una "captura" del mismo.
         html2canvas($(".card")[0]).then((canvas) => {
             
             //Aquí llamamos al plugin "filesaver" para poder descargar la imagen y almacenarla en nuestro dispositivo.
             canvas.toBlob(function(blob){
+            /*Al generar el archivo, usamos la variable creada enteriormente para crear una imagen con el nombre del personaje.*/    
             saveAs(blob, 'ficha '+nombreTarjeta+'.png')
         })
         });
@@ -57,6 +60,7 @@ $( document ).ready(function() {
                      data.forEach(element => {
                         //Ya que cada elemento de cada personaje tiene un color distinto, usamos de fondo una imagen distinta según el asignado en la BBDD.
                         $('.card').css({'background-image':'url('+element.imgElem+')'})
+                        /*Asignamos al botón, el valor del nombre del personaje para poder usarlo más adelante.*/
                         $('#crearImagen').val(element.nombrePJ)
                         //Aquí modificamos el contenido del contenedor "card" y le añadimos todo el contenido de los personajes a la tarjeta.
                         $(".card").html(
@@ -152,6 +156,7 @@ $( document ).ready(function() {
                         }, 1000);
                     })
                 },
+                /*En caso de que la recuperación de datos con AJAX falle, con estas líneas podemos conocer el motivo del error.*/
                 error: function(response) {
                 console.log(response);
                 }

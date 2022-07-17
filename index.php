@@ -14,7 +14,8 @@
     <title>Genshin Ascension Cards</title>
     <!-- Enlazamos el cdn de jquery para poder acceder a la librería de plugins. -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
-
+    
+    <!-- Enlace al favicon de la página. -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
     <!-- Enlazamos la fuente de google "Open Sans" para poder usarla en nuestra documento. -->
@@ -83,6 +84,15 @@
         <div class="card"></div>
         <!-- Este botón nos permitirá descargar la imagen generada. Contiene un icono de descarga. -->
         <button id="crearImagen"><i class="fa-solid fa-download"></i>Descargar</button>
+    
+        <div id="about">
+            <h1>Sobre Nosotros</h1>
+            <p><b>Genshin Ascension Card</b> nace como un proyecto estudiantil. Nuestra meta es ayudar a que los jugadores de Genshin Impact conozcan los materiales que necesitan
+            para ascender a sus personaje favoritos y las cantidades necesarias para ello. Los materiales se encuentran dispersos por todo Teyvat, si no sabes donde encontrar
+            alguno, puedes consultar el <a href="https://webstatic-sea.mihoyo.com/?lang=es-es">mapa interactivo</a> oficial del juego.</p>
+            <img src="img/captura.png" alt="captura">
+        </div>
+
     </main>
     
     <footer>
