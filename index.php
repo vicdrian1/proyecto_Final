@@ -53,8 +53,6 @@
                 <li class="menu_item"><a href="#">Colabora</a></li>
             </ul>
         </nav>
-
-        <hr>
     </header>
 
     <!-- Aquí se encuentra el contenido principal de la página web. -->
