@@ -84,6 +84,8 @@
         <div class="card"></div>
         <!-- Este botón nos permitirá descargar la imagen generada. Contiene un icono de descarga. -->
         <button id="crearImagen"><i class="fa-solid fa-download"></i>Descargar</button>
+
+        <hr>
     
         <div id="about">
             <h1>Sobre Nosotros</h1>
@@ -95,6 +97,8 @@
 
     </main>
     
+    <hr>
+
     <footer>
         <img id="logoFooter" src="img/logo.png" alt="logo">
         <p>Genshin Ascension Cards</p>
