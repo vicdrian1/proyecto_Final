@@ -15,7 +15,7 @@
     <!-- Enlazamos el cdn de jquery para poder acceder a la librería de plugins. -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
 
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
     <!-- Enlazamos la fuente de google "Open Sans" para poder usarla en nuestra documento. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
