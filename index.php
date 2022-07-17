@@ -10,10 +10,12 @@
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Spanish">
-
+    
     <title>Genshin Ascension Cards</title>
     <!-- Enlazamos el cdn de jquery para poder acceder a la librería de plugins. -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 
     <!-- Enlazamos la fuente de google "Open Sans" para poder usarla en nuestra documento. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,7 +86,7 @@
     </main>
     
     <footer>
-        <img class="logo" src="img/logo.png" alt="logo">
+        <img id="logoFooter" src="img/logo.png" alt="logo">
         <p>Genshin Ascension Cards</p>
         <p>Todos los derechos reservados</p>
         <ul class="social">

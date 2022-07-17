@@ -402,6 +402,13 @@ footer p:nth-of-type(2){
     position: relative;
 }
 
+/*Líneas referentes al logo del footer, en este caso no existe el margen izquierdo para dejarlo centrado.*/
+#logoFooter{
+    height: 3em;
+    width:auto;
+    object-fit: cover;
+}
+
 /*-RESPONSIVE MÓVILES-*/
 
 @media screen and (min-width: 343px) and (max-width: 793px) {
