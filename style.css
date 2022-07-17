@@ -356,6 +356,10 @@ main{
     margin-right: .5em;
 }
 
+.fa-solid:hover{
+    color: orange;
+}
+
 /*-SOBRE NOSOTROS-*/
 
 /*Líneas sobre el contenedor de la sección "Sobre Nosotros" donde explicamos un poco quiénes somos y nuestro objetivo.*/
