@@ -1,7 +1,7 @@
 hr{
-    opacity: .3;
+    opacity: .2;
     color: white;
-    width: 95%;
+    width: 98%;
 }
 
 /*Con estas líneas definimos la fuente utilizada por defecto y utilizamos la propiedad "border-box" para que los tamaños del documento tengan en cuenta el padding.
