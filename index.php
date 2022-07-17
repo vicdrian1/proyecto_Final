@@ -104,9 +104,9 @@
         <p>Genshin Ascension Cards</p>
         <p>Todos los derechos reservados</p>
         <ul class="social">
-            <li class="menu_item"><a href="https://twitter.com/home"><i class="fa-brands fa-twitter" style="padding-top: .3em;"></i></a></li>
-            <li class="menu_item"><a href="https://www.youtube.com"><i class="fa-brands fa-youtube" style="padding-top: .3em;"></i></a></li>
-            <li class="menu_item"><a href="https://www.instagram.com"><i class="fa-brands fa-instagram" style="padding-top: .3em;"></i></a></li>
+            <li class="menu_item"><a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter" style="padding-top: .3em;"></i></a></li>
+            <li class="menu_item"><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube" style="padding-top: .3em;"></i></a></li>
+            <li class="menu_item"><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" style="padding-top: .3em;"></i></a></li>
         </ul>
     </footer>
     <!-- Enlace a nuestro archivo de "html2canvas" que nos permite convertir un contenedor en una imagen. -->
