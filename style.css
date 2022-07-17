@@ -335,7 +335,6 @@ main{
     border: 1px solid white;
     cursor: pointer;
     display: none; 
-    box-shadow: 0px 1rem 3px -1rem white;
     margin-bottom: 2em;
 }
 
@@ -373,13 +372,13 @@ main{
 #about p{
     color: white;
     font-size: 18px;
-    width: 70%;
+    width: 80%;
     margin-top: .5em;
 }
 
 /*Aquí se define el estilo de la imagen (captura del juego) donde se ve a un jugador consiguiente un objeto.*/
 #about img{
-    width: 70%;
+    width: 80%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -613,11 +612,11 @@ footer p:nth-of-type(2){
     /*-SOBRE NOSOTROS*/
 
     #about p{
-        width: 90%;
+        width: 80%;
     }
 
     #about img{
-        width: 90%;
+        width: 80%;
         height: 25em;
         object-fit: cover;
     }
