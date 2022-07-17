@@ -49,7 +49,7 @@
 
             <!-- Lista de los elementos de navegación de la web. -->
             <ul class="menu_items">
-                <li class="menu_item"><a href="#">Sobre Nosotros</a></li>
+                <li class="menu_item"><a href="#about">Sobre Nosotros</a></li>
                 <li class="menu_item"><a href="#">Colabora</a></li>
             </ul>
         </nav>
