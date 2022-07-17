@@ -1,8 +1,7 @@
 hr{
-    background: linear-gradient(90deg, rgba(2,0,36,0.3) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,0.3) 100%);
-    opacity: .8;
+    opacity: .3;
+    color: white;
     width: 95%;
-    height: 5px;
 }
 
 /*Con estas líneas definimos la fuente utilizada por defecto y utilizamos la propiedad "border-box" para que los tamaños del documento tengan en cuenta el padding.
