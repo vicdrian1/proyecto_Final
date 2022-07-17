@@ -356,7 +356,7 @@ main{
     margin-right: .5em;
 }
 
-.fa-solid:hover{
+a:hover{
     color: orange;
 }
 
