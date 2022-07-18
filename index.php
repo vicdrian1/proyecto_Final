@@ -32,12 +32,12 @@
     <!-- Aquí se encuentra el header de la página. -->
     <header>
         <!-- Aquí se encuentra nuestro menú de navegación, formado por un logo y un título por un lado y las secciones por otro. -->
-        <div class="hero">
+        <div class="hero" id="hero">
         </div>
         <nav id="slide_nav">
             <div class="menu_logo">
-                <img class="logo" src="img/logo.png" alt="logo">
-                <h1><a href="">Genshin Ascension Cards</a></h1>
+                <a href="#hero"><img class="logo" src="img/logo.png" alt="logo"></a>
+                <h1>Genshin Ascension Cards</h1>
             </div>
 
             <!-- Este es el menú hamburguesa que aparecerá solo cuando la pantalla tenga cierta resolución. -->
