@@ -6,6 +6,7 @@
     $username = "xiy3is6fz4kurfhw";
     $password = "dhn1aptrlw6bttjj";
 
+    /*Aquí le damos unos atributos por defecto a nuestra conexión.*/
     $options = [
         \PDO::ATTR_ERRMODE  => \PDO::ERRMODE_EXCEPTION,
         \PDO::ATTR_DEFAULT_FETCH_MODE  => \PDO::FETCH_ASSOC,

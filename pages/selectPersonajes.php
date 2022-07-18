@@ -1,13 +1,18 @@
 <?php
 
+/*Esta condición nos permite ejecutar este Select solo cuando sea necesario (Al hacer clic en la foto de algún personaje). */
 if(isset($_POST["cartaPersonaje"])){
 
     try{
+
+        /*Aquí realizamos la conexión con la BBDD para el select.*/
         include "../db/pdoconfig.php";
         $connection = new PDO("mysql:host=".$host.";dbname=".$dbname,$username,$password,$options);
         
+        /*En esta línea recogemos la id del personaje seleccionado y la almacenamos en una variable.*/
         $id_personaje = $_POST["cartaPersonaje"];
- 
+        
+        /*Hacemos el select para el personaje cuya id corresponde con la seleccionada, usando la variable creada anteriormente.*/
         $personajes = $connection->query("SELECT personaje.id, personaje.nombre AS nombrePJ, personaje.imgElem, personaje.imgSplash, personaje.imgPerfil, i1.imagen AS item1, i1.cantidad AS i1Cant, 
         i2.imagen AS item2, i2.cantidad AS i2Cant,
         i3.imagen AS item3, i3.cantidad AS i3Cant,
@@ -41,7 +46,8 @@ if(isset($_POST["cartaPersonaje"])){
         JOIN items AS i14 ON personaje.id_item14 = i14.id
         JOIN items AS i15 ON personaje.id_item15 = i15.id
         JOIN items AS i16 ON personaje.id_item16 = i16.id WHERE personaje.id='".$id_personaje."'" )->fetchAll();
- 
+
+        /*Aquí convertimos los datos en un objeto json, para poder usarlos con AJAX.*/
         echo json_encode($personajes);
  
      }catch(Exception $error){
