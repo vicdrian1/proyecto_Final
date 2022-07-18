@@ -153,7 +153,7 @@ $( document ).ready(function() {
                         /*Estas líneas generan una pequeña animación de desplazamiento hacia la tarjeta generada al pulsar en algún personaje.*/
                         $([document.documentElement, document.body]).animate({
                             scrollTop: $(".card").offset().top
-                        }, 1000);
+                        }, 100);
                     })
                 },
                 /*En caso de que la recuperación de datos con AJAX falle, con estas líneas podemos conocer el motivo del error.*/
