@@ -16,12 +16,6 @@ $( document ).ready(function() {
         $(".menu_items").toggleClass("show");
     });
 
-    $(".fa-solid").hover(function(){
-        $(this).attr("src","img/logo_hover.png")
-    }, function(){
-        $(this).attr("src","img/logo.png")
-    })
-
     /*GENERAR IMAGEN*/
 
     //Esta función nos permite seleccionar el contenedor con el id "crearImagen" y al hacer click ejecutará una función para convertir un contenedor en una imagen.
