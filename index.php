@@ -50,7 +50,7 @@
             <!-- Lista de los elementos de navegación de la web. -->
             <ul class="menu_items">
                 <li class="menu_item"><a href="#about">Sobre Nosotros</a></li>
-                <li class="menu_item"><a href="#">Colabora</a></li>
+                <li class="menu_item"><a href="#collab">Colabora</a></li>
             </ul>
         </nav>
     </header>
@@ -99,7 +99,8 @@
         
         <div id="collab">
             <h1>¿Te gustaría colaborar con nosotros?</h1>
-            <p>Contáctanos enviando un correo a <a href="mailto:genshinascensioncards@gmail.com?">genshinascensioncards@gmail.com</a> y te contactaremos lo más rápido posible :).</p>
+            <p>Nos gusta mejorar constantemente y tener los datos actualizado siempre, si algún personaje no aparece o crees que hay algún fallo, 
+            contáctanos enviando un correo a <a href="mailto:genshinascensioncards@gmail.com?">genshinascensioncards@gmail.com</a> y te responderemos lo más rápido posible :).</p>
             <img src="img/contactus.jpg" alt="contáctanos">    
         </div>
     </main>
