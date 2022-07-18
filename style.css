@@ -354,9 +354,13 @@ main{
 }
 
 /*Estas líneas son para darle un pequeño espaciado entre el icono de descarga y el texto del botón.*/
-.fa-brands{
+.fa-solid{
     margin-right: .5em;
     color: orange;
+}
+
+.fa-brands:hover{
+    color:orange;
 }
 
 /*-SOBRE NOSOTROS-*/
