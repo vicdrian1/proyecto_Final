@@ -99,7 +99,8 @@
         
         <div id="collab">
             <h1>¿Te gustaría colaborar con nosotros?</h1>
-            <p>Contáctanos enviando un correo a <a href="mailto:genshinascensioncards@gmail.com?"></a></p>
+            <p>Contáctanos enviando un correo a <a href="mailto:genshinascensioncards@gmail.com?">genshinascensioncards@gmail.com</a> y te contactaremos lo más rápido posible :).</p>
+            <img src="img/contactus.jpg" alt="contáctanos">    
         </div>
     </main>
     
