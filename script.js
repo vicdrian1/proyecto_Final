@@ -16,6 +16,8 @@ $( document ).ready(function() {
         $(".menu_items").toggleClass("show");
     });
 
+    $(".logo").attr("src","img/logo_hover.png")
+
     /*GENERAR IMAGEN*/
 
     //Esta función nos permite seleccionar el contenedor con el id "crearImagen" y al hacer click ejecutará una función para convertir un contenedor en una imagen.

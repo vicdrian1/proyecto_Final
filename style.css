@@ -617,13 +617,15 @@ footer p:nth-of-type(2){
 
     /*-SOBRE NOSOTROS*/
 
+    /*Se ajusta el texto a la anchura del resto de la web al móvil.*/
     #about p{
         width: 80%;
     }
 
+    /*Se ajusta la imagen a la anchura de los dispositivos móviles.*/
     #about img{
         width: 80%;
-        height: 25em;
+        height: 20em;
         object-fit: cover;
     }
 }

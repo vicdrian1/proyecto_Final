@@ -37,7 +37,7 @@
         <nav id="slide_nav">
             <div class="menu_logo">
                 <img class="logo" src="img/logo.png" alt="logo">
-                <h1>Genshin Ascension Cards</h1>
+                <h1><a href="">Genshin Ascension Cards</a></h1>
             </div>
 
             <!-- Este es el menú hamburguesa que aparecerá solo cuando la pantalla tenga cierta resolución. -->
