@@ -365,7 +365,7 @@ main{
 /*-SOBRE NOSOTROS-*/
 
 /*Líneas sobre el contenedor de la sección "Sobre Nosotros" donde explicamos un poco quiénes somos y nuestro objetivo.*/
-#about{
+#about, #collab{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -374,14 +374,14 @@ main{
 }
 
 /*Aquí se define el estilo del título de la sección*/
-#about h1{
+#about h1, #collab h1{
     font-size: calc(1.5rem + ((1vw - 7.93px) * 0.7098));
     color: white;
     margin-bottom: 0;
 }
 
 /*Aquí estilizamos el texto de la sección y ajustamos el tamaño.*/
-#about p{
+#about p, #collab p{
     color: white;
     font-size: 18px;
     width: 80%;

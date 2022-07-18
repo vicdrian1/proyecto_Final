@@ -94,7 +94,13 @@
             alguno, puedes consultar el <a href="https://webstatic-sea.mihoyo.com/?lang=es-es">mapa interactivo</a> oficial del juego.</p>
             <img src="img/captura.png" alt="captura">
         </div>
-
+        
+        <hr>
+        
+        <div id="collab">
+            <h1>¿Te gustaría colaborar con nosotros?</h1>
+            <p>Contáctanos enviando un correo a <a href="mailto:genshinascensioncards@gmail.com?"></a></p>
+        </div>
     </main>
     
     <hr>
