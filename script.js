@@ -18,6 +18,8 @@ $( document ).ready(function() {
 
     $(".logo").hover(function(){
         $(this).attr("src","img/logo_hover.png")
+    }, function(){
+        $(this).attr("src","img/logo.png")
     })
 
     /*GENERAR IMAGEN*/
