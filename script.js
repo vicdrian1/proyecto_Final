@@ -16,7 +16,7 @@ $( document ).ready(function() {
         $(".menu_items").toggleClass("show");
     });
 
-    $(".logo").hover(function(){
+    $(".fa-solid").hover(function(){
         $(this).attr("src","img/logo_hover.png")
     }, function(){
         $(this).attr("src","img/logo.png")

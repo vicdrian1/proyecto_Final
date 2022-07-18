@@ -36,7 +36,7 @@
         </div>
         <nav id="slide_nav">
             <div class="menu_logo">
-                <a href="#hero"><img class="logo" src="img/logo.png" alt="logo"></a>
+                <img class="logo" src="img/logo.png" alt="logo">
                 <h1>Genshin Ascension Cards</h1>
             </div>
 
