@@ -389,7 +389,7 @@ main{
 }
 
 /*Aquí se define el estilo de la imagen (captura del juego) donde se ve a un jugador consiguiente un objeto.*/
-#about img{
+#about img, #collab img{
     width: 80%;
     height: auto;
     object-fit: cover;
