@@ -16,7 +16,9 @@ $( document ).ready(function() {
         $(".menu_items").toggleClass("show");
     });
 
-    $(".logo").attr("src","img/logo_hover.png")
+    $(".logo").hover(function(){
+        $(this).attr("src","img/logo_hover.png")
+    })
 
     /*GENERAR IMAGEN*/
 
