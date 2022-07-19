@@ -1,5 +1,12 @@
 $( document ).ready(function() {
     
+    if ($('#burger_menu').is(':visible')) {
+        $('body').addClass("fixed-position");
+     } else {
+        $('body').removeClass("fixed-position");
+     }
+
+
     /* MENÚ HAMBURGUESA */
 
     //Primero seleccionamos el contenedor con el id "burger_menu" y creamos una función que se ejecutará al hacer clic sobre él.
