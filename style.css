@@ -110,23 +110,25 @@ anclamos el menú a la parte superior de la página. */
     transition: all .5s;
     margin-top: 10px;
     margin-left: 1rem;
-    position: fixed;
 }
 
 /*Estas clases serán añadidas a las líneas anteriormente mencionadas para que tengan una animación de convertirse en una X para cerrar el menú hamburguesa una vez abierto.*/
 .primera {
     transform: translateY(9px) rotate(45deg);
     transition: all 0.4s;
+    position: fixed;
 }
 
 .segunda {
     opacity: 0;
     transition: all 0s;
+    position: fixed;
 }
 
 .tercera {
     transform: translateY(-20px) rotate(-45deg);
     transition: all 0.4s;
+    position: fixed;
 }
 
 /*Esta clase permite mostrar/ocultar la lista del menú en móvil al hacer clic sobre el icono correspondiente.*/
