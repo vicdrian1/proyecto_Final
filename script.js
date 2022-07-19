@@ -25,11 +25,13 @@ $( document ).ready(function() {
     /*Creamos una función al hacer clic en cualquiera de los elementos del menú. Esta revertirá las clases activadas al hacer clic al "menú hamburguesa".
     De esta forma nos aseguramos que al hacer clic ya sea en el menú para cerrarlo o en cualquiera de sus elementos, todo vuelva a su lugar.*/
     $(".menu_item").click(function(){
-        $('body').toggleClass("overflow-menu");
-        $(".menu_items").toggleClass("show");
-        $("#burger_menu>span:nth-child(1)").toggleClass("primera");
-        $("#burger_menu>span:nth-child(2)").toggleClass("segunda");
-        $("#burger_menu>span:nth-child(3)").toggleClass("tercera");
+        if ($('body').hasClass("overflow-menu")){
+            $('body').toggleClass("overflow-menu");
+            $(".menu_items").toggleClass("show");
+            $("#burger_menu>span:nth-child(1)").toggleClass("primera");
+            $("#burger_menu>span:nth-child(2)").toggleClass("segunda");
+            $("#burger_menu>span:nth-child(3)").toggleClass("tercera");
+        }
     })
 
     /*GENERAR IMAGEN*/

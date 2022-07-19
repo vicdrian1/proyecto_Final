@@ -55,6 +55,7 @@
         </nav>
     </header>
 
+
     <!-- Aquí se encuentra el contenido principal de la página web. -->
     <main>
         <div id="intro">
