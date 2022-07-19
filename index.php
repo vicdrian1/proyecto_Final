@@ -41,7 +41,7 @@
             </div>
 
             <!-- Este es el menú hamburguesa que aparecerá solo cuando la pantalla tenga cierta resolución. -->
-            <div id="burger_menu" onclick="showModal()">
+            <div id="burger_menu">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
