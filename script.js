@@ -20,6 +20,7 @@ $( document ).ready(function() {
 
     $(".menu_item").click(function(){
         $('body').toggleClass("hidden");
+        $(".menu_items").toggleClass("show");
     })
 
     /*GENERAR IMAGEN*/
