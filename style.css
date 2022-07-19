@@ -131,7 +131,7 @@ anclamos el menú a la parte superior de la página. */
     transform: translateY(-20px) rotate(-45deg);
     transition: all 0.4s;
     position: fixed;
-    top: 3%;
+    top: 11%;
     right: 2em;
 }
 
