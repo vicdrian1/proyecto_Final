@@ -182,7 +182,7 @@ main{
     text-align: center;
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 /*Líneas referentes al contenedor de las tarjetas de perfil de personajes. Usamos flex-box y la propiedad "space-around" para distribuir los elementos.*/
