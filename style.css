@@ -117,22 +117,22 @@ anclamos el menú a la parte superior de la página. */
     transform: translateY(9px) rotate(45deg);
     transition: all 0.4s;
     position: fixed;
-    right: 2em;
+    top: 5%;
+    left: 2%;
 }
 
 .segunda {
     opacity: 0;
     transition: all 0s;
     position: fixed;
-    right: 2em;
 }
 
 .tercera {
     transform: translateY(-20px) rotate(-45deg);
     transition: all 0.4s;
     position: fixed;
-    right: 2em;
-    top:-2px;
+    top: 5%;
+    left: 2%;
 }
 
 /*Esta clase permite mostrar/ocultar la lista del menú en móvil al hacer clic sobre el icono correspondiente.*/
