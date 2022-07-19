@@ -625,7 +625,10 @@ footer p:nth-of-type(2){
     /*-SOBRE NOSOTROS*/
 
     /*Se ajusta el texto a la anchura del resto de la web al móvil.*/
-    
+    #about h1, #collab h1{
+        width: 90%;
+    }        
+
     #about p, #collab p{
         width: 90%;
         font-size: 18px;
