@@ -129,6 +129,7 @@ anclamos el menú a la parte superior de la página. */
     transform: translateY(-20px) rotate(-45deg);
     transition: all 0.4s;
     position: fixed;
+    right: 2em;
 }
 
 /*Esta clase permite mostrar/ocultar la lista del menú en móvil al hacer clic sobre el icono correspondiente.*/
