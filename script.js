@@ -1,9 +1,9 @@
 $( document ).ready(function() {
     
-    if ($('.menu_items show').is(':visible')) {
-        $('body').addClass("fixed-position");
+    if ($('#burger_menu').is(':visible')) {
+        $('#burger_menu').addClass("fixed-position");
     } else {
-        $('body').removeClass("fixed-position");
+        $('#burger_menu').removeClass("fixed-position");
     }
 
 
