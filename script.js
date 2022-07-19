@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     
-    if ($('.show').is(':visible')) {
+    if ($('.menu_items').hasClass('.show')) {
         $('body').addClass("fixed-position");
      } else {
         $('body').removeClass("fixed-position");
