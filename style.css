@@ -117,12 +117,14 @@ anclamos el menú a la parte superior de la página. */
     transform: translateY(9px) rotate(45deg);
     transition: all 0.4s;
     position: fixed;
+    right: 2em;
 }
 
 .segunda {
     opacity: 0;
     transition: all 0s;
     position: fixed;
+    right: 2em;
 }
 
 .tercera {
