@@ -14,7 +14,7 @@ $( document ).ready(function() {
         CSS "show"*/
         $(".menu_items").stop();
         $(".menu_items").toggleClass("show");
-        $('body').toggleClass("fixed-position");
+        $('body').toggleClass("hidden");
         
     });
 
