@@ -1,10 +1,10 @@
 $( document ).ready(function() {
     
-    if ($('#burger_menu').is(':visible')) {
-        $('#burger_menu').addClass("fixed-position");
-    } else {
-        $('#burger_menu').removeClass("fixed-position");
-    }
+    if ($('.show').is(':visible')) {
+        $('body').addClass("fixed-position");
+     } else {
+        $('body').removeClass("fixed-position");
+     }
 
 
     /* MENÚ HAMBURGUESA */
