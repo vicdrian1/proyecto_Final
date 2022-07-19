@@ -13,7 +13,7 @@ $( document ).ready(function() {
         /*Se usa la función "stop()" para evitar que se genere una cola de acciones al hacer varios clics de forma rápida. Al aparecer el menú en móvil, le añadimos la clase
         CSS "show"*/
         $(".menu_items").stop();
-        $(".menu_items").toggleClass("show");
+        $('.menu_items').animate({height: 'toggle'}, 500)
         
     });
 
