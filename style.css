@@ -251,7 +251,7 @@ main{
 .profile>img{
     width:100%;
     height: 93%;
-/*     object-fit: cover; */
+    object-fit: cover;
 }
 
 /*Líneas correspondientes al nombre del personaje en su perfil.*/
