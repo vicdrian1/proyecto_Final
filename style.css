@@ -110,6 +110,7 @@ anclamos el menú a la parte superior de la página. */
     transition: all .5s;
     margin-top: 10px;
     margin-left: 1rem;
+    position: fixed;
 }
 
 /*Estas clases serán añadidas a las líneas anteriormente mencionadas para que tengan una animación de convertirse en una X para cerrar el menú hamburguesa una vez abierto.*/
