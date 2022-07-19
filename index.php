@@ -121,6 +121,9 @@
     <script src="html2canvas.js"></script>
     <!-- Enlace a nuestro archivo de "filesaver", plugin que nos permite descargar de forma automática la imagen al pulsar el botón. -->
     <script src="filesaver.js"></script>
+
+    <script src="scroll-up-bar.min.js"></script>
+    
     <!-- Enlace a nuestro archivo de jquery, donde están las funciones necesarias para el funcionamiento de la aplicación. -->
     <script src="script.js"></script>
 </body>
