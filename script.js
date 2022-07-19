@@ -14,26 +14,9 @@ $( document ).ready(function() {
         CSS "show"*/
         $(".menu_items").stop();
         $(".menu_items").toggleClass("show");
+        $('body').toggleClass("fixed-position");
         
     });
-
-              
-    // Select required elements from the DOM
-    const modal = document.querySelector("#burger_menu");
-    const body = document.querySelector("body");
-  
-    const showModal = function (e) {
-        modal.classList.toggle("hidden");
-  
-        if (!modal.classList.contains("hidden")) {
-            // Disable scroll
-            body.style.overflow = "hidden";
-        } else {
-            // Enable scroll
-            body.style.overflow = "auto";
-        }
-    };
-    $("#burger_menu").click(showModal())
 
     /*GENERAR IMAGEN*/
 
