@@ -18,6 +18,12 @@ $( document ).ready(function() {
         
     });
 
+    $("#about").click(function(){
+        $('body').toggleClass("hidden");
+    })
+    $("collab").click(function(){
+        $('body').toggleClass("hidden");
+    })
     /*GENERAR IMAGEN*/
 
     //Esta función nos permite seleccionar el contenedor con el id "crearImagen" y al hacer click ejecutará una función para convertir un contenedor en una imagen.
