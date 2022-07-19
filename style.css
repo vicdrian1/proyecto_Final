@@ -524,6 +524,7 @@ footer p:nth-of-type(2){
     /*Estas líneas modifican el resto de los párrafos de la intro.*/
     #intro p{
         width: 80%;
+        font-size: 18px;
     }
 
     /*-CHARACTERS-*/
