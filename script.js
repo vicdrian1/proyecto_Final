@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     
-    /* MENÚ HAMBURGUESA */
+    /*-MENÚ HAMBURGUESA-*/
 
     //Primero seleccionamos el contenedor con el id "burger_menu" y creamos una función que se ejecutará al hacer clic sobre él.
     $("#burger_menu").click(function(){
@@ -23,7 +23,8 @@ $( document ).ready(function() {
     });
 
     /*Creamos una función al hacer clic en cualquiera de los elementos del menú. Esta revertirá las clases activadas al hacer clic al "menú hamburguesa".
-    De esta forma nos aseguramos que al hacer clic ya sea en el menú para cerrarlo o en cualquiera de sus elementos, todo vuelva a su lugar.*/
+    De esta forma nos aseguramos que al hacer clic ya sea en el menú para cerrarlo o en cualquiera de sus elementos, todo vuelva a su lugar.
+    Esto SOLO funcionará si el menú ya tiene la clase "overflow-menu", de lo contrario, evitaría poder scrollear al usar el menú en Desktop.*/
     $(".menu_item").click(function(){
         if ($('body').hasClass("overflow-menu")){
             $('body').toggleClass("overflow-menu");
@@ -34,7 +35,7 @@ $( document ).ready(function() {
         }
     })
 
-    /*GENERAR IMAGEN*/
+    /*-GENERAR IMAGEN-*/
 
     //Esta función nos permite seleccionar el contenedor con el id "crearImagen" y al hacer click ejecutará una función para convertir un contenedor en una imagen.
     $("#crearImagen").click(function(){
@@ -52,7 +53,7 @@ $( document ).ready(function() {
         });
     })
 
-    /*AJAX*/
+    /*-AJAX-*/
 
     //Seleccionamos el contenedor con la case "item" y al hacer clic, ejecutará una función.
     $(".perfiles").on('click', function(e){   

@@ -200,6 +200,7 @@ main{
     cursor: pointer;
 }
 
+
 /*Estas líneas definen el tamaño de las imagenes de las tarjetitas del perfil y además, les da un borde redondeado y un fondo semitransparente.*/
 .perfiles img{
     height: 13em;
@@ -207,6 +208,10 @@ main{
     object-fit: cover;
     background-color: rgba(148, 148, 148, 0.2);
     border-radius: 10px;
+}
+
+.perfiles img:hover{
+    background-color: rgba(212, 212, 212, 0.733);
 }
 
 /*Líneas correspondientes a los párrafos con el nombre de los personajes asociados a cada tarjetita*/
