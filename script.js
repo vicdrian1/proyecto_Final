@@ -21,7 +21,6 @@ $( document ).ready(function() {
     // Select required elements from the DOM
     const modal = document.querySelector("#burger_menu");
     const body = document.querySelector("body");
-    $("#burger_menu").click(showModal())
   
     const showModal = function (e) {
         modal.classList.toggle("hidden");
@@ -34,6 +33,7 @@ $( document ).ready(function() {
             body.style.overflow = "auto";
         }
     };
+    $("#burger_menu").click(showModal())
 
     /*GENERAR IMAGEN*/
 
