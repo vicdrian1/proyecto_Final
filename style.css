@@ -1,18 +1,4 @@
-.overflow-menu{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-hr{
-    opacity: .2;
-    color: white;
-    width: 98%;
-}
+/*-GENERAL-*/
 
 /*Con estas líneas definimos la fuente utilizada por defecto y utilizamos la propiedad "border-box" para que los tamaños del documento tengan en cuenta el padding.
 .Esto afecta a todo el documento gracias al selector universal. Con "overflow-y: overlay", podemos evitar que la barra de desplazamiento vertical ocupe espacio. */
@@ -44,8 +30,6 @@ Con "filter: opacity(.5)"  le damos un aspecto ligeramente oscurecido.*/
     filter:opacity(.5);
     height:50em;
 }
-
-
 
 /*Aquí se encuentra el código relativo al menú de navegación de la web. Usamos la propiedad flex para poder organizar los elementos.
 Con "box-shadow" podemos añadir una línea fina debajo del menú, para darle un mejor aspecto visual. Con "position: absolute" y "top: 0%",
@@ -267,7 +251,7 @@ main{
 .profile>img{
     width:100%;
     height: 93%;
-    object-fit: cover;
+/*     object-fit: cover; */
 }
 
 /*Líneas correspondientes al nombre del personaje en su perfil.*/
@@ -468,6 +452,25 @@ footer p:nth-of-type(2){
     width:auto;
     object-fit: cover;
 }
+
+/*Esta clase se añadirá al body para evitar que el usuario pueda hacer scroll cuando se abra el menú.*/
+.overflow-menu{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*Aquí damos estilo a las líneas separadoras de la web, para delimitar las partes de la web.*/
+hr{
+    opacity: .2;
+    color: white;
+    width: 98%;
+}
+
 
 /*-RESPONSIVE MÓVILES-*/
 
