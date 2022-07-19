@@ -21,6 +21,9 @@ $( document ).ready(function() {
     $(".menu_item").click(function(){
         $('body').toggleClass("hidden");
         $(".menu_items").toggleClass("show");
+        $("#burger_menu>span:nth-child(1)").toggleClass("primera");
+        $("#burger_menu>span:nth-child(2)").toggleClass("segunda");
+        $("#burger_menu>span:nth-child(3)").toggleClass("tercera");
     })
 
     /*GENERAR IMAGEN*/
