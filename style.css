@@ -1,10 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /*-GENERAL-*/
 
 /*Con estas líneas definimos la fuente utilizada por defecto y utilizamos la propiedad "border-box" para que los tamaños del documento tengan en cuenta el padding.
 .Esto afecta a todo el documento gracias al selector universal. Con "overflow-y: overlay", podemos evitar que la barra de desplazamiento vertical ocupe espacio. */
 *{
     font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     overflow-y: overlay;
 }
 
@@ -27,7 +35,8 @@ Con "filter: opacity(.5)"  le damos un aspecto ligeramente oscurecido.*/
     background-image: url("img/fondoHero.jpg");
     background-size: cover;
     background-position: center center;
-    filter:opacity(.5);
+    -webkit-filter:opacity(.5);
+            filter:opacity(.5);
     height:50em;
 }
 
@@ -36,18 +45,29 @@ Con "box-shadow" podemos añadir una línea fina debajo del menú, para darle un
 anclamos el menú a la parte superior de la página. */
 #slide_nav {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 1rem 3px -1rem white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-shadow: 0px 1rem 3px -1rem white;
+            box-shadow: 0px 1rem 3px -1rem white;
     position: absolute;
     top: 0%;
 }
 
 /*Con esto damos estilo al contenedor que incluye el logo y al título de la web*/
 .menu_logo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 /*Aquí le damos estilo al logo de la web, para adaptar su tamaño al texto.*/
@@ -55,7 +75,8 @@ anclamos el menú a la parte superior de la página. */
     margin-left: 1.5em;
     height: 3em;
     width:auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 /*Estas líneas son referentes al título que aparece junto al logo, que nos llevará a la parte principal de la web. El tamaño de letra estará adaptado según el tamaño de la pantalla. */
@@ -69,19 +90,29 @@ anclamos el menú a la parte superior de la página. */
 /*Estas líneas le darán un efecto al texto cuando pasemos el cursor por encima. Con "transition" le damos una pequeña animación de transición.*/
 #slide_nav h1:hover{
     color: orange;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
 
 /*Esta es la lista del menú. Eliminamos los espacios que tienen las listas por defecto.*/
 .menu_items{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style-type: none;
-    padding-inline-start: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
 }
 
 /*Líneas correspondientes al menú hamburguesa, este lo oculta en las pantallas de pc. Este menú solo será visible en dispositivos móviles.*/
@@ -99,6 +130,8 @@ anclamos el menú a la parte superior de la página. */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
     margin-top: 10px;
     margin-left: 1rem;
@@ -106,17 +139,27 @@ anclamos el menú a la parte superior de la página. */
 
 /*Estas clases serán añadidas a las líneas anteriormente mencionadas para que tengan una animación de convertirse en una X para cerrar el menú hamburguesa una vez abierto.*/
 .primera {
-    transform: translateY(9px) rotate(45deg);
+    -webkit-transform: translateY(9px) rotate(45deg);
+        -ms-transform: translateY(9px) rotate(45deg);
+            transform: translateY(9px) rotate(45deg);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
 }
 
 .segunda {
     opacity: 0;
+    -webkit-transition: all 0s;
+    -o-transition: all 0s;
     transition: all 0s;
 }
 
 .tercera {
-    transform: translateY(-20px) rotate(-45deg);
+    -webkit-transform: translateY(-20px) rotate(-45deg);
+        -ms-transform: translateY(-20px) rotate(-45deg);
+            transform: translateY(-20px) rotate(-45deg);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
 }
 
@@ -146,6 +189,8 @@ ul.show{
 /*Estas lineas hacen referencia al efecto de hover de los elementos del menú*/
 .menu_items li a:hover{
     color: orange;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
@@ -153,9 +198,16 @@ ul.show{
 
 /*Estas líneas hacen referencia al contenedor principal del cuerpo de la página*/
 main{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100vw;
 /*     box-shadow: 0px 1rem 3px -1rem white; */
 }
@@ -181,10 +233,14 @@ main{
 .characters{
     margin-top: 2em;
     margin-bottom: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 80%;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 /*Estas son cada una de las tarjetitas de perfil de los personajes. Con estas líneas hacemos que hayan 5 tarjetitas por fila.*/
@@ -192,9 +248,16 @@ main{
     height: 15em;
     width: 20%;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 1em;
     margin-bottom: .5em;
     cursor: pointer;
@@ -205,7 +268,8 @@ main{
 .perfiles img{
     height: 13em;
     width: 13em;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     background-color: rgba(148, 148, 148, 0.2);
     border-radius: 10px;
 }
@@ -231,7 +295,9 @@ main{
     margin-top: 2em;
     margin-bottom: 2em;
     display: none;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width:80%;
     height:50em;
     background-repeat: no-repeat;
@@ -245,9 +311,16 @@ main{
     height: 90%;
     margin-left: 2.5%;
     border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     overflow: hidden;
     background-color: rgba(17, 17, 17, 0.8);
 }
@@ -256,7 +329,8 @@ main{
 .profile>img{
     width:100%;
     height: 93%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 /*Líneas correspondientes al nombre del personaje en su perfil.*/
@@ -270,9 +344,13 @@ main{
 
 /*Líneas correspondientes al contenedor de los materiales. Dentro se encuentran TODOS los materiales.*/
 .materials{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
     width: 70%;
     height: 90%;
     margin-left: 2.5%;
@@ -286,10 +364,16 @@ main{
     width: 95%;
     border-radius: 10px;
     height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     overflow: hidden;
 }
 
@@ -306,9 +390,16 @@ main{
 
 /*Aquí definimos el estilo de los contenedores de cada objeto.*/
 .item{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 10%;
 }
 
@@ -316,8 +407,10 @@ main{
 .item>img{
     width:80%;
     height: 5em;
-    filter: drop-shadow( 1.5px 1.5px 5px rgba(255, 255, 255, 0.384) );
-    object-fit:contain;
+    -webkit-filter: drop-shadow( 1.5px 1.5px 5px rgba(255, 255, 255, 0.384) );
+            filter: drop-shadow( 1.5px 1.5px 5px rgba(255, 255, 255, 0.384) );
+    -o-object-fit:contain;
+       object-fit:contain;
 }
 
 /*Aquí definimos el estilo de las cantidades de cada objeto.*/
@@ -332,8 +425,12 @@ main{
     border-radius: 30px;
     height: 3em;
     width: 10em;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 18px;
     color:white;
     background-color: rgba(0, 0, 0, 0);
@@ -363,9 +460,16 @@ main{
 
 /*Líneas sobre el contenedor de la sección "Sobre Nosotros" donde explicamos un poco quiénes somos y nuestro objetivo.*/
 #about, #collab{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     overflow: hidden;
     margin-bottom: 2em;
 }
@@ -389,7 +493,8 @@ main{
 #about img, #collab img{
     width: 80%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 10px;
 }
 
@@ -406,10 +511,19 @@ footer{
     background-color: rgb(0, 0, 0);
     width: 100%;
     margin-top: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 /*Líneas referentes al tamaño de los párrafos del footer*/
@@ -432,13 +546,21 @@ footer p:nth-of-type(2){
 
 /*Líneas referentes al menú social del footer.*/
 .social{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style-type: none;
-    padding-inline-start: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
 }
 
 /*Líneas referentes a la lista dentro del menú social.*/
@@ -455,7 +577,8 @@ footer p:nth-of-type(2){
 #logoFooter{
     height: 3em;
     width:auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 /*Esta clase se añadirá al body para evitar que el usuario pueda hacer scroll cuando se abra el menú.*/
@@ -487,8 +610,13 @@ hr{
     .menu_items {
       position: fixed;
       top: -110vh;
+      -webkit-transition: all .2s;
+      -o-transition: all .2s;
       transition: all .2s;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.897);
@@ -501,9 +629,16 @@ hr{
     /*El menú hamburguesa, oculto en la versión de pc, ahora es visible. Con Z-index lo ponemos por delante del resto de la aplicación.*/
     #burger_menu{
         cursor: pointer;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         z-index: 11;
         padding-right: 2em;
     }
@@ -527,9 +662,16 @@ hr{
 
     /*Con estas líneas podemos ordenar el contenido de la intro de la web.*/
     #intro{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     /*Esto modifica el espacio del texto del primer párrafo de la intro.*/
@@ -561,7 +703,8 @@ hr{
     .perfiles img{
         height:80%;
         width: auto;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         border-radius: 8px;
     }
 
@@ -571,8 +714,13 @@ hr{
         background-size: cover;
         background-position: center center;
         height:90em;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     /*Estas líneas modifican el aspecto del contenedor de la imagen del personaje en la tarjeta.*/
@@ -585,7 +733,8 @@ hr{
 
     /*Se modifica el tamaño de la imagen para hacerla más visual.*/
     .profile>img{
-        object-position: center 25%;
+        -o-object-position: center 25%;
+           object-position: center 25%;
         height: 90%;
     }
 
@@ -600,16 +749,24 @@ hr{
         width: 90%;
         height: 70%;
         margin-left: 0;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     /*Modificamos ligeramente la disposición de los elementos de los contenedores de cada grupo de objetos.*/
     .level, .talent, .mixed{
         width: 100%;
         padding-bottom: 5%;
-        justify-content: space-evenly;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
     }
 
     /*Modificamos el tamaño del título de cada grupo de objetos*/
@@ -654,7 +811,8 @@ hr{
     #about img{
         width: 80%;
         height: 20em;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 }
 
@@ -678,9 +836,16 @@ hr{
 
     /*Organizamos la parte de la introducción a la web con un flex-box y una disposición en columna.*/
     #intro{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     /*Restringimos el tamaño de los párrafos a un 90% de su contenedor padre.*/
@@ -710,8 +875,13 @@ hr{
         background-size: cover;
         background-position: center center;
         height:90em;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     /*Estas líneas modifican el aspecto del contenedor de la imagen del personaje en la tarjeta.*/
@@ -724,7 +894,8 @@ hr{
 
     /*Se modifica el tamaño de la imagen para hacerla más visual.*/
     .profile>img{
-        object-position: center 40%;
+        -o-object-position: center 40%;
+           object-position: center 40%;
         height: 90%;
     }
 
@@ -739,16 +910,24 @@ hr{
         width: 90%;
         height: 70%;
         margin-left: 0;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     /*Modificamos ligeramente la disposición de los elementos de los contenedores de cada grupo de objetos.*/
     .level, .talent, .mixed{
         width: 100%;
         padding-bottom: 5%;
-        justify-content: space-evenly;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
     }
 
     /*Modificamos el tamaño del título de cada grupo de objetos*/

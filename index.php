@@ -85,9 +85,11 @@
         <div class="card"></div>
         <!-- Este botón nos permitirá descargar la imagen generada. Contiene un icono de descarga. -->
         <button id="crearImagen"><i class="fa-solid fa-download"></i>Descargar</button>
-
+         
+        <!-- Separador para las secciones. -->
         <hr>
-    
+        
+        <!-- Líneas correspondientes a la sección "Sobre Nosotros." -->
         <div id="about">
             <h1>Sobre Nosotros</h1>
             <p><b>Genshin Ascension Card</b> nace como un proyecto estudiantil. Nuestra meta es ayudar a que los jugadores de Genshin Impact conozcan los materiales que necesitan
@@ -98,6 +100,7 @@
         
         <hr>
         
+        <!-- Líneas correspondientes a la sección "Colabora." -->
         <div id="collab">
             <h1>¿Te gustaría colaborar con nosotros?</h1>
             <p>Nos gusta mejorar constantemente y tener los datos actualizado siempre, si algún personaje no aparece o crees que hay algún fallo, 
@@ -107,7 +110,8 @@
     </main>
     
     <hr>
-
+    
+    <!-- Líneas correspondientes al footer. -->
     <footer>
         <img id="logoFooter" src="img/logo.png" alt="logo">
         <p>Genshin Ascension Cards</p>
@@ -118,6 +122,8 @@
             <li class="menu_item"><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" style="padding-top: .3em;"></i></a></li>
         </ul>
     </footer>
+
+    
     <!-- Enlace a nuestro archivo de "html2canvas" que nos permite convertir un contenedor en una imagen. -->
     <script src="html2canvas.js"></script>
     <!-- Enlace a nuestro archivo de "filesaver", plugin que nos permite descargar de forma automática la imagen al pulsar el botón. -->
