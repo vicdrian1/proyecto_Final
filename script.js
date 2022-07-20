@@ -38,7 +38,10 @@ $( document ).ready(function() {
     /*-Hover Logo_Footer-*/
     $("#logoFooter").hover(function(){
         $(this).attr('src','img/logo_hover.png');
-    }) 
+    },function(){
+        $(this).attr('src','img/logo.png');
+    }
+    ) 
 
 
 
