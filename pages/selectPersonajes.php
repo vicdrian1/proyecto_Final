@@ -53,5 +53,5 @@ if(isset($_POST["cartaPersonaje"])){
      }catch(Exception $error){
          echo $error;
      }
-    } 
+    }
 ?>

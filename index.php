@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Etiquetas meta del proyecto. Necesarias para un buen posicionamiento web. -->
     <meta charset="UTF-8">
@@ -10,11 +11,11 @@
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Spanish">
-    
+
     <title>Genshin Ascension Cards</title>
     <!-- Enlazamos el cdn de jquery para poder acceder a la librería de plugins. -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
-    
+
     <!-- Enlace al favicon de la página. -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
@@ -68,54 +69,55 @@
         utilizando un bucle "foreach" para generar una tarjeta para cada personaje de la BBDD. -->
         <div class="characters">
             <?php
-                require_once 'db/connection.php';
-                include 'pages/select.php';
-                include 'pages/selectPersonajes.php';
+            require_once 'db/connection.php';
+            include 'pages/select.php';
+            include 'pages/selectPersonajes.php';
 
-                /* Aquí se usa la variable "$ids" obtenida de la página "select.php" para obtener los datos de la BBDD. */
-                foreach($ids as $id){
-                    echo '<div class="perfiles" data-value="'.$id["id"].'">';
-                    echo '<img src="'.$id["imgPerfil"].'" alt="">';
-                    echo '<p>'.$id["nombre"].'</p>';
+            /* Aquí se usa la variable "$ids" obtenida de la página "select.php" para obtener los datos de la BBDD. */
+            foreach ($ids as $id) {
+                echo '<div class="perfiles" data-value="' . $id["id"] . '">';
+                echo '<img src="' . $id["imgPerfil"] . '" alt="">';
+                echo '<p>' . $id["nombre"] . '</p>';
                 echo '</div>';
-                }
+            }
             ?>
         </div>
-        <!--Aquí se encuentra el div que contendrá las tarjetas generadas al seleccionar cada personaje.-->       
+        <!--Aquí se encuentra el div que contendrá las tarjetas generadas al seleccionar cada personaje.-->
         <div class="card"></div>
         <!-- Este botón nos permitirá descargar la imagen generada. Contiene un icono de descarga. -->
         <button id="crearImagen"><i class="fa-solid fa-download"></i>Descargar</button>
-         
+
         <!-- Separador para las secciones. -->
         <hr>
-        
+
         <!-- Líneas correspondientes a la sección "Sobre Nosotros." -->
         <div id="about">
             <h1>Sobre Nosotros</h1>
             <p><b>Genshin Ascension Card</b> nace como un proyecto estudiantil. Nuestra meta es ayudar a que los jugadores de Genshin Impact conozcan los materiales que necesitan
-            para ascender a sus personaje favoritos y las cantidades necesarias para ello. Los materiales se encuentran dispersos por todo Teyvat, si no sabes donde encontrar
-            alguno, puedes consultar el <a href="https://webstatic-sea.mihoyo.com/?lang=es-es">mapa interactivo</a> oficial del juego.</p>
+                para ascender a sus personaje favoritos y las cantidades necesarias para ello. Los materiales se encuentran dispersos por todo Teyvat, si no sabes donde encontrar
+                alguno, puedes consultar el <a href="https://webstatic-sea.mihoyo.com/?lang=es-es">mapa interactivo</a> oficial del juego.</p>
             <img src="img/captura.png" alt="captura">
         </div>
-        
+
         <hr>
-        
+
         <!-- Líneas correspondientes a la sección "Colabora." -->
         <div id="collab">
             <h1>¿Te gustaría colaborar con nosotros?</h1>
-            <p>Nos gusta mejorar constantemente y tener los datos actualizado siempre, si algún personaje no aparece o crees que hay algún fallo, 
-            contáctanos enviando un correo a <a href="mailto:genshinascensioncards@gmail.com?">genshinascensioncards@gmail.com</a> y te responderemos lo más rápido posible :).</p>
-            <img src="img/contactus.jpg" alt="contáctanos">    
+            <p>Nos gusta mejorar constantemente y tener los datos actualizado siempre, si algún personaje no aparece o crees que hay algún fallo,
+                contáctanos enviando un correo a <a href="mailto:genshinascensioncards@gmail.com?">genshinascensioncards@gmail.com</a> y te responderemos lo más rápido posible :).</p>
+            <img src="img/contactus.jpg" alt="contáctanos">
         </div>
     </main>
-    
+
     <hr>
-    
+
     <!-- Líneas correspondientes al footer. -->
     <footer>
         <a href="#hero"><img id="logoFooter" src="img/logo.png" alt="logo"></a>
         <p>Genshin Ascension Cards</p>
         <p>Todos los derechos reservados</p>
+        <!-- Líneas correspondientes al menú social. -->
         <ul class="social">
             <li class="menu_item"><a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter" style="padding-top: .3em;"></i></a></li>
             <li class="menu_item"><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube" style="padding-top: .3em;"></i></a></li>
@@ -123,7 +125,7 @@
         </ul>
     </footer>
 
-    
+
     <!-- Enlace a nuestro archivo de "html2canvas" que nos permite convertir un contenedor en una imagen. -->
     <script src="html2canvas.js"></script>
     <!-- Enlace a nuestro archivo de "filesaver", plugin que nos permite descargar de forma automática la imagen al pulsar el botón. -->
@@ -131,4 +133,5 @@
     <!-- Enlace a nuestro archivo de jquery, donde están las funciones necesarias para el funcionamiento de la aplicación. -->
     <script src="script.js"></script>
 </body>
+
 </html>
