@@ -37,7 +37,7 @@ $( document ).ready(function() {
 
     /*-Hover Logo_Footer-*/
     $("#logoFooter").hover(function(){
-        $(this).attr('src','logo_hover.png');
+        $(this).attr('src','img/logo_hover.png');
     }) 
 
 
