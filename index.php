@@ -113,7 +113,7 @@
     
     <!-- Líneas correspondientes al footer. -->
     <footer>
-        <img id="logoFooter" src="img/logo.png" alt="logo">
+        <img id="logoFooter" src="img/logo.png" alt="logo" href="#hero">
         <p>Genshin Ascension Cards</p>
         <p>Todos los derechos reservados</p>
         <ul class="social">

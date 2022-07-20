@@ -35,6 +35,13 @@ $( document ).ready(function() {
         }
     })
 
+    /*-Hover Logo_Footer-*/
+    $("#logoFooter").hover(function(){
+        $(this).attr('src','logo_hover.png');
+    }) 
+
+
+
     /*-GENERAR IMAGEN-*/
 
     //Esta función nos permite seleccionar el contenedor con el id "crearImagen" y al hacer click ejecutará una función para convertir un contenedor en una imagen.
