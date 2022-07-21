@@ -829,6 +829,137 @@ hr {
 }
 
 /*-RESPONSIVE TABLET-*/
+@media only screen and (min-device-width:793px) and (max-device-width: 1200px){
+
+    /*-MENÚ-*/
+
+    /*Ajustamos el tamaño de la primera parte del menú para que ocupe un 50% del espacio.*/
+    .menu_logo {
+        width: 50%;
+    }
+
+    /*Aquí eliminamos el padding existente entre los items del menú.*/
+    .menu_item {
+        padding: 0;
+    }
+
+    /*-MAIN-*/
+
+    /*Organizamos la parte de la introducción a la web con un flex-box y una disposición en columna.*/
+    #intro {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    /*Restringimos el tamaño de los párrafos a un 90% de su contenedor padre.*/
+    #intro p {
+        width: 90%;
+    }
+
+    /*-CHARACTERS-*/
+
+    /*Eliminamos el margen inferior del contenedor de los perfiles y reducimos el tamaño del superior.*/
+    .characters {
+        margin-bottom: 0;
+        margin-top: 1em;
+    }
+
+    /*Modificamos el tamaño de los contenedores de cada tarjeta del perfil para adaptarlos a los dispositivos móviles.*/
+    .perfiles {
+        width: 30%;
+        margin-top: 0;
+        margin-bottom: 1em;
+        height: 15em;
+    }
+
+    /*Con estas líneas adaptamos el estilo de la tarjeta a un tamaño de dispositivo intermedio.*/
+    .card {
+        margin-top: 0;
+        background-size: cover;
+        background-position: center center;
+        height: 90em;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    /*Estas líneas modifican el aspecto del contenedor de la imagen del personaje en la tarjeta.*/
+    .profile {
+        width: 90%;
+        height: 30%;
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    /*Se modifica el tamaño de la imagen para hacerla más visual.*/
+    .profile>img {
+        -o-object-position: center 25%;
+        object-position: center 25%;
+        height: 90%;
+    }
+
+    /*Modifica los márgenes del párrafo del nombre del personaje.*/
+    .profile>p {
+        margin-top: .25em;
+        margin-bottom: .25em;
+    }
+
+    /*Cambiamos la dirección de flex-box a columnas para adaptarlo a los dispositivos de tamaño intermedio como tablets, etc.*/
+    .materials {
+        width: 90%;
+        height: 70%;
+        margin-left: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    /*Modificamos ligeramente la disposición de los elementos de los contenedores de cada grupo de objetos.*/
+    .level,
+    .talent,
+    .mixed {
+        width: 100%;
+        padding-bottom: 5%;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    /*Modificamos el tamaño del título de cada grupo de objetos*/
+    .level p,
+    .talent p,
+    .mixed p {
+        font-size: 18px;
+    }
+
+    /*Modificamos el espacio que ocupa cada objeto.*/
+    .item {
+        width: 30%;
+    }
+
+    /*Modificamos el tamaño de la letra ligeramente para adaptarlo a los dispositivos de tamaño intermedio como tablets, etc.*/
+    .item p {
+        font-size: 16px;
+    }
+}
 
 @media only screen and (min-device-width:793px) and (max-device-width: 1200px) and (orientation: portrait){
 
@@ -962,134 +1093,3 @@ hr {
     }
 }
 
-@media only screen and (min-device-width:793px) and (max-device-width: 1200px){
-
-    /*-MENÚ-*/
-
-    /*Ajustamos el tamaño de la primera parte del menú para que ocupe un 50% del espacio.*/
-    .menu_logo {
-        width: 50%;
-    }
-
-    /*Aquí eliminamos el padding existente entre los items del menú.*/
-    .menu_item {
-        padding: 0;
-    }
-
-    /*-MAIN-*/
-
-    /*Organizamos la parte de la introducción a la web con un flex-box y una disposición en columna.*/
-    #intro {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    /*Restringimos el tamaño de los párrafos a un 90% de su contenedor padre.*/
-    #intro p {
-        width: 90%;
-    }
-
-    /*-CHARACTERS-*/
-
-    /*Eliminamos el margen inferior del contenedor de los perfiles y reducimos el tamaño del superior.*/
-    .characters {
-        margin-bottom: 0;
-        margin-top: 1em;
-    }
-
-    /*Modificamos el tamaño de los contenedores de cada tarjeta del perfil para adaptarlos a los dispositivos móviles.*/
-    .perfiles {
-        width: 30%;
-        margin-top: 0;
-        margin-bottom: 1em;
-        height: 15em;
-    }
-
-    /*Con estas líneas adaptamos el estilo de la tarjeta a un tamaño de dispositivo intermedio.*/
-    .card {
-        margin-top: 0;
-        background-size: cover;
-        background-position: center center;
-        height: 90em;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    /*Estas líneas modifican el aspecto del contenedor de la imagen del personaje en la tarjeta.*/
-    .profile {
-        width: 90%;
-        height: 30%;
-        margin-left: 0;
-        margin-top: 5%;
-    }
-
-    /*Se modifica el tamaño de la imagen para hacerla más visual.*/
-    .profile>img {
-        -o-object-position: center 25%;
-        object-position: center 25%;
-        height: 90%;
-    }
-
-    /*Modifica los márgenes del párrafo del nombre del personaje.*/
-    .profile>p {
-        margin-top: .25em;
-        margin-bottom: .25em;
-    }
-
-    /*Cambiamos la dirección de flex-box a columnas para adaptarlo a los dispositivos de tamaño intermedio como tablets, etc.*/
-    .materials {
-        width: 90%;
-        height: 70%;
-        margin-left: 0;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    /*Modificamos ligeramente la disposición de los elementos de los contenedores de cada grupo de objetos.*/
-    .level,
-    .talent,
-    .mixed {
-        width: 100%;
-        padding-bottom: 5%;
-        -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-        justify-content: space-evenly;
-    }
-
-    /*Modificamos el tamaño del título de cada grupo de objetos*/
-    .level p,
-    .talent p,
-    .mixed p {
-        font-size: 18px;
-    }
-
-    /*Modificamos el espacio que ocupa cada objeto.*/
-    .item {
-        width: 30%;
-    }
-
-    /*Modificamos el tamaño de la letra ligeramente para adaptarlo a los dispositivos de tamaño intermedio como tablets, etc.*/
-    .item p {
-        font-size: 16px;
-    }
-}
