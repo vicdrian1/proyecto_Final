@@ -7,6 +7,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     overflow-y: overlay;
+    overflow-x:overlay;
 }
 
 /*Eliminamos el margin y el padding al body para evitar que nos aparezcan bordes blancos, y le damos un alto y un ancho mínimo de 100% para que ocupen toda 
