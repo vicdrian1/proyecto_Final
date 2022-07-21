@@ -69,6 +69,7 @@
         utilizando un bucle "foreach" para generar una tarjeta para cada personaje de la BBDD. -->
         <div class="characters">
             <?php
+            /*Incluimos aquí nuestros páginas php para poder utilizar sus datos en esta página.*/ 
             require_once 'db/connection.php';
             include 'pages/select.php';
             include 'pages/selectPersonajes.php';

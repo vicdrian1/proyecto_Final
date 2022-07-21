@@ -1,3 +1,4 @@
+/*Usamos esta función para que jquery se ejecute cuando la página esté "lista", evitando  que se ejecute antes de tiempo y de problemas*/
 $(document).ready(function () {
 
     /*-MENÚ HAMBURGUESA-*/
@@ -38,7 +39,7 @@ $(document).ready(function () {
 
     /*-Hover Logo_Footer-*/
     /*Seleccionamos nuestro logo del footer y utilizamos la función hover de jquery, para que cada vez que se pase el cursor, cambie de color. De esta manera, el usuario
-    lo asocia a que se trata de un enlace.*/
+    lo asocia a que se trata de un enlace. Esta función tiene 2 partes, una al entrar el cursor y otra al salir el cursor.*/
     $("#logoFooter").hover(function () {
         $(this).attr('src', 'img/logo_hover.png');
     }, function () {
