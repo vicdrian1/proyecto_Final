@@ -829,7 +829,7 @@ hr {
 }
 
 /*-RESPONSIVE TABLET-*/
-@media only screen and (min-device-width:793px) and (max-device-width: 1200px){
+@media only screen and (min-width:793px) and (max-width: 1200px){
 
     /*-MENÚ-*/
 
@@ -1037,8 +1037,8 @@ hr {
 
     /*Se modifica el tamaño de la imagen para hacerla más visual.*/
     .profile>img {
-        -o-object-position: center 40%;
-        object-position: center 40%;
+        -o-object-position: center 25%;
+        object-position: center 25%;
         height: 90%;
     }
 
