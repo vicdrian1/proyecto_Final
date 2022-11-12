@@ -3,5 +3,5 @@
     require "pdoconfig.php";
 
     /*Con esto creamos una conexión con nuestra BBDD con los datos existentes en la página de "pdoconfig.php".*/
-    $connection = new PDO("mysql:host=".$host.";dbname=".$dbname,$username,$password,$options);
+    $connection = new PDO("mysql:host=".$host."; port=5618; dbname=".$dbname,$username,$password,$options);
 ?>
