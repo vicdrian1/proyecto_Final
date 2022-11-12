@@ -7,7 +7,7 @@ if(isset($_POST["cartaPersonaje"])){
 
         /*Aquí realizamos la conexión con la BBDD para el select.*/
         include "../db/pdoconfig.php";
-        $connection = new PDO("mysql:host=".$host.";dbname=".$dbname,$username,$password,$options);
+        $connection = new PDO("mysql:host=".$host."; port=5618; dbname=".$dbname,$username,$password,$options);
         
         /*En esta línea recogemos la id del personaje seleccionado y la almacenamos en una variable.*/
         $id_personaje = $_POST["cartaPersonaje"];
