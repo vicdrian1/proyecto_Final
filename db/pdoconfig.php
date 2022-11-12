@@ -2,7 +2,7 @@
 
     /*Aquí se encuentran los datos necesarios para poder conectarnos a nuestra BBDD, el nombre del host, de la BBDD, del usuario y la contraseña.*/
     $host = "containers-us-west-120.railway.app";
-    $dbname = "railway";
+    $dbname = "h7da0xvpl14qj235";
     $username = "root";
     $password = "eAEfVStiGewAWOzU0Itn;
 
