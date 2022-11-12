@@ -1,10 +1,10 @@
 <?php
 
     /*Aquí se encuentran los datos necesarios para poder conectarnos a nuestra BBDD, el nombre del host, de la BBDD, del usuario y la contraseña.*/
-    $host = "oliadkuxrl9xdugh.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
-    $dbname = "h7da0xvpl14qj235";
-    $username = "xiy3is6fz4kurfhw";
-    $password = "dhn1aptrlw6bttjj";
+    $host = "containers-us-west-120.railway.app";
+    $dbname = "railway";
+    $username = "root";
+    $password = "eAEfVStiGewAWOzU0Itn;
 
     /*Aquí le damos unos atributos por defecto a nuestra conexión.*/
     $options = [
