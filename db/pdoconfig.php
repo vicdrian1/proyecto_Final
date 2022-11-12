@@ -4,7 +4,7 @@
     $host = "containers-us-west-120.railway.app";
     $dbname = "railway";
     $username = "root";
-    $password = "eAEfVStiGewAWOzU0Itn;
+    $password = "eAEfVStiGewAWOzU0Itn";
 
     /*Aquí le damos unos atributos por defecto a nuestra conexión.*/
     $options = [
